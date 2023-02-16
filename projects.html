@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsiveness.css">
+        <script src="javascripts.js" ></script>
+        <title> CJ Macas Portfolio</title>
+        <link rel="icon" type="image/png" href="cjmacasicon.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="fn-bar" href="index.html">
+                CJ <span class="ln-bar"> Macas </span>
+            </a>
+            <ul class="nav-option">
+                <li class="nav-link">
+                    <a href="index.html"> About me </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="active-nav"> Projects  </a>
+                </li>
+                <li class="nav-link">
+                    <a href="experience.html"> Work Experience </a>
+                </li>
+            </ul>
+            <div class="nav-burg">
+                <span class="hide"></span>
+                <span class="hide"></span>
+                <span class="hide"></span>
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector(".nav-burg");
+            const navMenu = document.querySelector(".nav-option");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                })
+        </script>
+        <div class="project-flex">
+            <div class="project-name">
+                <div class="project-1">
+                    <p class="proj-name">
+                      Personal Portfolio 
+                    </p>
+                    <img class="img-design" name="proj1Img">
+                </div>
+                <div class="project-2">
+                    <p class="proj-name">
+                        College Thesis  
+                    </p>
+                    <img class="img-design" name="proj2Img">
+                </div>
+                <div class="project-3">
+                    <p class="proj-name">
+                        Mobile Friendly Portfolio
+                    </p>
+                    <img class="img-design1" name="mobImg">
+                </div>
+                <div class="project-4"> 
+                    <p class="proj-name">
+                        Calculator 
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="socials">
+            <div class="top-side"> 
+                <a href="https://twitter.com/MacasJosh"><img class="twitter" src="icons/twitter.png"> </a>
+                <a href="https://www.linkedin.com/in/christian-josh-macas-676757197/"><img class="linkedin" src="icons/linkedin.png"> </a>
+                <a href="https://github.com/cjMacas"><img class="github" src="icons/github.png"> </a>
+                <a href="https://www.facebook.com/ChangeNamae/"><img class="facebook" src="icons/facebook.png"> </a> 
+            </div>
+            <div class="bottom-side"></div>
+                <p class="designer">Designed and developed by: 
+                    <span class="des-name"> Christian Josh Macas </span> </p>
+            </div>
+        </div>
+    </body>
+</html>

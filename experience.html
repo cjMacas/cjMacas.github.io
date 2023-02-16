@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsiveness.css">
+        <script src="javascripts.js" ></script>
+        <title> CJ Macas Portfolio</title>
+        <link rel="icon" type="image/png" href="cjmacasicon.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="fn-bar" href="index.html">
+                CJ <span class="ln-bar"> Macas </span>
+            </a>
+            <ul class="nav-option">
+                <li class="nav-link">   
+                    <a href="index.html"> About me </a>
+                </li>
+                <li class="nav-link">
+                    <a href="projects.html"> Projects  </a>
+                </li>
+                <li class="nav-link">
+                    <a href="#" class="active-nav"> Work Experience </a>
+                </li>
+            </ul>
+            <div class="nav-burg">
+                <span class="hide"></span>
+                <span class="hide"></span>
+                <span class="hide"></span>
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector(".nav-burg");
+            const navMenu = document.querySelector(".nav-option");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                })
+        </script>
+         <div class="flex-experience"></div>
+         <div class="work-history">
+             <div class="flex-works">
+                  <p class="workHistory">
+                 <div class="flex-canon">
+                     <p class="company-name"> Canon Business Process Services &#40;March 2021 &ndash; Present&#41; </p>
+                     <p class="job-title"> Coding Technician </p>
+                     <p class="job-txt">   Validating, and verifying thousands of data accurately in timely manner. </p>
+                     <p class="job-txt">   Provides feedback to other validators, and verifiers as part of annual quality control operations.
+                     <p class="job-txt">   Compiles daily, and weekly individual production report.								
+                     <p class="job-txt">   Determined bugs, and created solution for the said bugs as a Jr. Software Tester.
+                     <p class="job-txt">   Assisted the development team to create, and deploy a browser-based worksheet as a Jr. Software Tester.
+                         </p>
+                 </div>
+                 <div class="flex-dilg"> 
+                     <p class="company-name"> Department of interior and Local Government &#40;November 2020 &ndash; December 2020&#41;</p>
+                     <p class="job-title"> Contact Tracer </p>
+                     <p class="job-txt">   	Daily monitoring of COVID-19 close contacts, suspects, and patients. </p>
+                     <p class="job-txt">   	Weekly, and Monthly reporting to DILG about cases and suspects updates.
+                     <p class="job-txt">   	Responsible for the giving accurate SARS-CoV-2/COVID-19 cases count in Mandaluyong City.					
+                     <p class="job-txt">  	Successfully traced people with SARS-CoV-2/COVID-19 or close contacts, and suspects.
+                         </p>
+                 </div>
+                 <div class="flex-free">
+                     <p class="company-name"> Freelancer &#40;June 2020 &ndash; October 2020&#41;</p>
+                     <p class="job-title"> Computer building services</p>
+                     <p class="job-txt">   	Sold multiple sets of computer system. </p>
+                     <p class="job-txt">   	Built computer from scratch depending on costumer&rsquo;s budget and installed necessary software.
+                     <p class="job-txt">   	Provided technical support to customer&rsquo;s regarding their PC.					
+                         </p>
+                 </div>
+                 <div class="flex-int3"> 
+                     <p class="company-name"> La Europa Ceramica Tile, Inc. &#40;December 2020 &ndash; March 2021&#41;</p>
+                     <p class="job-title">  IT Intern </p>
+                     <p class="job-txt">   	Successful troubleshooting of malfunctioning computers, and printers. </p>
+                     <p class="job-txt">   	Assisted the IT team when setting up computers for new employees.
+                     <p class="job-txt">   	Supported the Marketing team by researching, and calling possible clients.				
+                         </p>
+                 </div>
+                 <div class="flex-int2"> 
+                     <p class="company-name"> Worklink Services, Inc. &#40;April 2019 &ndash; June 2019&#41;  </p>
+                     <p class="job-title"> Office Intern </p>
+                     <p class="job-txt">   	Sorting of clients&rsquo; paper works as well as receipts. </p>
+                     <p class="job-txt">   	Running errand from office to sorting centers
+                     <p class="job-txt">   	Encoding the important paper works.				
+                         </p>
+                 </div>
+                 <div class="flex-int1"> 
+                     <p class="company-name"> Polytechnic University of the Philippines &#40;April 2018 &ndash; June 2018&#41;</p>
+                     <p class="job-title"> Vice Principal Associate Intern </p>
+                     <p class="job-txt">   	Sorted and organized student's physical files for release and admission process. </p>
+                     <p class="job-txt">   	Assisted number of students throughout the enrollment process such as processing of their documents and credentials.
+                     <p class="job-txt">   	Answered phones, provided information and took messages.					
+                         </p>
+                 </div>
+             </div>
+         </div>
+        <div class="socials">
+            <div class="top-side"> 
+                <a href="https://twitter.com/MacasJosh"><img class="twitter" src="icons/twitter.png"> </a>
+                <a href="https://www.linkedin.com/in/christian-josh-macas-676757197/"><img class="linkedin" src="icons/linkedin.png"> </a>
+                <a href="https://github.com/cjMacas"><img class="github" src="icons/github.png"> </a>
+                <a href="https://www.facebook.com/ChangeNamae/"><img class="facebook" src="icons/facebook.png"> </a> 
+            </div>
+            <div class="bottom-side"></div>
+                <p class="designer">Designed and developed by: 
+                    <span class="des-name"> Christian Josh Macas </span> </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,272 @@
+@media only screen and (max-width: 700px) {
+    /* codes below are for navigation reponsiveness */
+    .nav-burg{
+        display: block;
+        margin-left: 50px;
+    }
+    .nav-burg.active .hide:nth-child(2){
+        opacity: 0;
+    }
+    .nav-burg.active .hide:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .nav-burg.active .hide:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-option{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0px;
+        flex-direction: column;
+        background-color: rgba(14,56,122, .9);;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-link{
+        margin: 16px 0;
+    }
+    .nav-option.active{
+        right: 0;
+    }
+    ul li::after, ul li:hover::after{
+        background-color: transparent;
+        transition: .5s ease-in-out;
+    }
+    /* codes below are for description and below */
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-section{
+        display: flex;
+        justify-content: center;
+        padding: 30px 0px 30px 0px
+    }
+    .profile-pic{
+        width: 250px;
+        height: 250px;
+    }
+    .text-section{
+        display: flex;
+        flex-direction: column;  
+        padding-top: 20px;
+    }
+
+    .fn-bot ,.title-bot, .desc-bot{    
+        display: flex;
+        justify-content: center;   
+    }
+    .title-bot{
+        font-size: 16.5px;
+        color: purple;
+        padding: 0px 0px 20px 0px;
+    }
+    .desc-bot{
+        padding-bottom: 30px;
+        width: 80%;
+        padding-left: 52px;     
+    }
+    .fn-bot{
+        font-size: 30px;
+        letter-spacing: 4px;
+        padding: 0px
+    }
+    .ln-bot{
+        color: purple;
+    }
+    .flex-bot1, .flex-bot3{
+        width: 10px;
+    }
+    .grid{
+        display: grid;
+        grid-template-areas:
+        'top top top top'
+        'left-css left-css left-html left-html'
+        'right-js right-js right-vscode right-vscode'
+        'left-wordp left-wordp left-gith left-gith'
+        'right-git right-git right-react right-react'
+        'bootS bootS PS PS'
+        'blank blank blank1 blank1';
+        grid-gap: 20px;
+        text-align: center;
+    }
+    .txt-detail{
+        color: black;
+        font-size: 15px;
+    }
+    .item-top{
+        grid-area: top;
+    }
+    .item-top{
+        font-family: 'Roboto';
+        font-size: 30px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 600;
+    }
+    .skill-css{
+        grid-area: left-css;  
+        border-radius: 10px 3px 3px 3px;
+    }
+    .css-img{
+        width: 110px;
+    }
+    .skill-html{
+        grid-area: left-html;
+        border-radius: 3px 10px 3px 3px;
+        box-shadow: 2px 3px black;
+        
+    }
+    .html-img{
+        width: 130px;
+    }
+    .skill-js{
+        grid-area: right-js;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: -2px 3px black;
+    }
+    .js-img{
+        width: 130px;
+    }
+    .skill-vscode{
+        grid-area: right-vscode;
+        border-radius: 3px 3px 3px 3px;
+    }
+    .vs-img{
+        width: 95px;
+    }
+    .vs-img:hover{
+        width: 105px;
+    }
+    .skill-wordp{
+        grid-area: left-wordp;
+        border-radius: 3px 3px 3px 3px;
+    }
+    .skill-gith{
+        grid-area: left-gith;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 2px 3px black;
+    }
+    .gh-img{
+        width: 150px;
+        margin-top: 8px;
+    }
+    .gh-img:hover{
+        width: 160px;
+    }
+    .skill-git{
+        grid-area: right-git;
+          box-shadow: -2px 3px black;
+    }
+    .git-img{
+        width: 150px;
+        margin-top: 15px;  
+    }
+    .git-img:hover{
+        width: 160px;
+    }
+    .skill-react{
+        grid-area: right-react; 
+        border-radius: 3px 3px 3px 3px;
+    }
+    .skill-bootS {
+        grid-area: bootS;
+        padding-top: 10px;
+        border: solid 1px black;
+        border-radius: 5px;
+        font-family: 'Roboto';
+        font-weight: 600;  
+        border-radius: 3px 3px 3px 10px;
+    }
+    .bStrap-img{
+        width: 110px;
+        margin-top: 10px;
+    }
+    .skill-PS{
+        grid-area: PS;
+        height: 150px;
+        padding-top: 10px;
+        border: solid 1px black;
+        border-radius: 5px;
+        font-family: 'Roboto';
+        font-weight: 600;  
+        border-radius: 3px 3px 10px 3px;
+    }
+    .pS-img{
+        margin-top: -7px;
+        width: 130px;
+    }
+    .pS-img:hover{
+        width: 145px;
+    }
+    .skill-blank{
+        grid-area: blank;
+    }
+    .skill-blank1{
+        grid-area: blank1;
+    }
+    /* project tab responsiveness */
+    .project-name{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .project-1, .project-2, .project-3, .project-4{
+        width: 100%;
+        border-radius: 5px;
+        height: 230px;
+    }
+    .flex-port{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .flex-tbd{
+        border-radius: 0px 0px 15px 15px;
+    }
+
+    /* experience tab responsiveness */
+
+    .job-title{
+        font-size: 16px;
+        font-family: Arial;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    .company-name{
+        font-family: Arial;
+        font-size: 18px;
+        border-radius: 5px 5px 5px 5px; 
+    }
+    .job-txt{
+        width: 80%;
+    }
+    .flex-canon{
+        height: 360px;
+        padding: 20px 10px 0px 20px;   
+    }
+    .flex-dilg{
+        height: 295px;
+        padding: 20px 10px 0px 20px;       
+    }
+    .flex-free{
+        height: 200px;
+        padding: 20px 10px 0px 20px;       
+    }
+    .flex-int3{
+        height: 255px;
+        padding: 20px 10px 0px 20px;    
+    }
+    .flex-int2{
+        height: 200px;
+        padding: 20px 10px 0px 20px;
+    }
+    .flex-int1{
+        height: 320px;
+        padding: 20px 10px 0px 20px;       
+    }
+    .img-design1{
+        width: 85px;
+    }
+}

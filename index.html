@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsiveness.css">
+        <script defer href="script.js" ></script>
+        <title> CJ Macas Portfolio</title>
+        <link rel="icon" type="image/png" href="cjmacasicon.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="fn-bar" href="index.html">
+                CJ <span class="ln-bar"> Macas </span>
+            </a>
+            <ul class="nav-option">
+                <li class="nav-link">
+                    <a href="#" class="active-nav"> About me </a>
+                </li>
+                <li class="nav-link">
+                    <a href="projects.html"> Projects  </a>
+                </li>
+                <li class="nav-link">
+                    <a href="experience.html"> Work Experience </a>
+                </li>
+            </ul>
+            <div class="nav-burg">
+                <span class="hide"></span>
+                <span class="hide"></span>
+                <span class="hide"></span>
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector(".nav-burg");
+            const navMenu = document.querySelector(".nav-option");
+
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    navMenu.classList.toggle("active");
+                })
+        </script>
+        <div class="description">
+            <div class="img-section">
+                <img class="profile-pic" src="img/cjmac.jpg"> 
+            </div>
+            <div class="text-section">
+                <p class="fn-bot"> 
+                    Hi, I'm <span class="ln-bot"> CJ </span> 
+                 </p>
+                 <p class="title-bot">
+                    Front-end web developer
+                 </p>
+                 <p class="desc-bot">
+                    Currenly a self studying web developer,
+                    here you can navigate and find my current learnings,
+                    current and past projects i have worked on. Thanks for
+                    checking out my porfolio!
+                 </p>
+            </div>
+        </div>
+
+        <div class="flex-bot">
+            
+            <div class="flex-bot2">
+                <div class="grid">
+                    <div class="item-top">
+                        <p clas="skills-app"> 
+                            Skills and Applications </p> 
+                        </div>
+                        <div class="skill-css">                        
+                            <a href="https://www.w3schools.com/css/">
+                                <p class="txt-detail"> Cascading Style Sheet </p>
+                                <img src="img/css-logo.png" class="css-img" >
+                            </a>
+                        </div>
+                        <div class="skill-html">
+                            <a href="https://www.w3schools.com/html/">
+                                <p class="txt-detail"> HyperText Markup Language </p>
+                                <img src="img/html-logo.png" class="html-img">
+                            </a>
+                        </div>
+                        <div class="skill-js">
+                            <a href="https://www.w3schools.com/js/">
+                                <p class="txt-detail"> JavaScript </p>
+                                <img src="img/jslogo.png" class="js-img">
+                            </a>
+                        </div> 
+                        <div class="skill-vscode">
+                            <a href="https://visualstudio.microsoft.com/"> 
+                                <p class="txt-detail"> Visual Studio Code </p>
+                                <img src="img/vscode.png" class="vs-img">
+                            </a>
+                        </div> 
+                        <div class="skill-wordp">          
+                            <a href="https://wordpress.org/">
+                                <p class="txt-detail"> Wordpress </p>
+                                <img src="img/wp-logo.png" class="wp-img">
+                            </a>
+                            </div> 
+                        <div class="skill-gith">
+                            <a href="https://github.com/">
+                                <p class="txt-detail"> GitHub </p>
+                                <img src="img/gh-logo.png" class="gh-img">
+                            </a>
+                            </div> 
+                        <div class="skill-git">
+                            <a href="https://git-scm.com/">
+                                <p class="txt-detail"> Git </p>
+                                <img src="img/git-logo.png" class="git-img">
+                            </a>
+                            </div> 
+                        <div class="skill-react">                        
+                            <a href="https://reactjs.org/">
+                                <p class="txt-detail"> React </p>
+                                <img src="img/react-logo.png" class="react-img">
+                            </a>
+                            </div>
+                        <div class="skill-bootS">
+                            <a href="https://getbootstrap.com/"> 
+                                <p class="txt-detail"> BootStrap </p>
+                                <img src="img/bootS.png" class="bStrap-img">
+                            </a>
+                            </div>
+                        <div class="skill-PS">
+                            <a href="https://www.adobe.com/ph_en/products/photoshop.html">
+                                <p class="txt-detail"> Photoshop </p>
+                                <img src="img/Pshop.png" class="pS-img">
+                            </a>
+                            </div>
+                        <div class="skill-blank"> </div>
+                        <div class="skill-blank1"> </div>
+                    </div>     
+                    
+                </div>
+            </div>
+         <div class="socials">
+                <div class="top-side"> 
+                    <a href="https://twitter.com/MacasJosh"><img class="twitter" src="icons/twitter.png"> </a>
+                    <a href="https://www.linkedin.com/in/christian-josh-macas-676757197/"><img class="linkedin" src="icons/linkedin.png"> </a>
+                    <a href="https://github.com/cjMacas"><img class="github" src="icons/github.png"> </a>
+                    <a href="https://www.facebook.com/ChangeNamae/"><img class="facebook" src="icons/facebook.png"> </a> 
+                </div>
+                <div class="bottom-side"></div>
+                    <p class="designer">Designed and developed by: 
+                    <span class="des-name"> Christian Josh Macas </span> </p>
+                </div>
+        </div>
+    </body>
+</html>
